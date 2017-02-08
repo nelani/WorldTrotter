@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController{
+class ConversionViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view.")
         
         updatedCelsiusLabel()
     }
@@ -25,6 +27,20 @@ class ConversionViewController: UIViewController{
         nf.maximumFractionDigits = 1
         return nf
     }()
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool{
+        
+        let existingTextHasDecimalSeperator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeperator = string.range(of: ".")
+        
+        if existingTextHasDecimalSeperator != nil,
+            replacementTextHasDecimalSeperator != nil {
+            return false
+        } else{
+            return true
+        }
+    }
     
     var fahrenheitValue: Measurement<UnitTemperature>?{
         didSet{
@@ -59,4 +75,6 @@ class ConversionViewController: UIViewController{
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer){
         textField.resignFirstResponder()
     }
+    
+ 
 }

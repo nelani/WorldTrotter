@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5E06BD8A1E4159DA006A5697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06BD891E4159DA006A5697 /* AppDelegate.swift */; };
-		5E06BD8F1E4159DA006A5697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E06BD8D1E4159DA006A5697 /* Main.storyboard */; };
 		5E06BD911E4159DA006A5697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06BD901E4159DA006A5697 /* Assets.xcassets */; };
 		5E06BD941E4159DA006A5697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E06BD921E4159DA006A5697 /* LaunchScreen.storyboard */; };
 		5E06BD9F1E4159DA006A5697 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06BD9E1E4159DA006A5697 /* WorldTrotterTests.swift */; };
 		5E06BDAA1E4159DA006A5697 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06BDA91E4159DA006A5697 /* WorldTrotterUITests.swift */; };
 		5E30144F1E41C01400E80D97 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30144E1E41C01400E80D97 /* ConversionViewController.swift */; };
+		5E9D889E1E47EBBF00C63690 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9D889D1E47EBBF00C63690 /* MapKit.framework */; };
+		5EC3E7921E4ACE66001B7C8F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */; };
+		5EC3E7951E4AD172001B7C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC3E7931E4AD172001B7C8F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		5E06BD861E4159DA006A5697 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E06BD891E4159DA006A5697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E06BD8E1E4159DA006A5697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E06BD901E4159DA006A5697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E06BD931E4159DA006A5697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E06BD951E4159DA006A5697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		5E06BDA91E4159DA006A5697 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		5E06BDAB1E4159DA006A5697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E30144E1E41C01400E80D97 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
+		5E9D889D1E47EBBF00C63690 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5EC3E7941E4AD172001B7C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9D889E1E47EBBF00C63690 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				5E06BD9D1E4159DA006A5697 /* WorldTrotterTests */,
 				5E06BDA81E4159DA006A5697 /* WorldTrotterUITests */,
 				5E06BD871E4159DA006A5697 /* Products */,
+				5E9D889C1E47EBBF00C63690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +105,8 @@
 			children = (
 				5E30144E1E41C01400E80D97 /* ConversionViewController.swift */,
 				5E06BD891E4159DA006A5697 /* AppDelegate.swift */,
-				5E06BD8D1E4159DA006A5697 /* Main.storyboard */,
+				5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */,
+				5EC3E7931E4AD172001B7C8F /* Main.storyboard */,
 				5E06BD901E4159DA006A5697 /* Assets.xcassets */,
 				5E06BD921E4159DA006A5697 /* LaunchScreen.storyboard */,
 				5E06BD951E4159DA006A5697 /* Info.plist */,
@@ -123,6 +130,14 @@
 				5E06BDAB1E4159DA006A5697 /* Info.plist */,
 			);
 			path = WorldTrotterUITests;
+			sourceTree = "<group>";
+		};
+		5E9D889C1E47EBBF00C63690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D889D1E47EBBF00C63690 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC3E7951E4AD172001B7C8F /* Main.storyboard in Resources */,
 				5E06BD941E4159DA006A5697 /* LaunchScreen.storyboard in Resources */,
 				5E06BD911E4159DA006A5697 /* Assets.xcassets in Resources */,
-				5E06BD8F1E4159DA006A5697 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E30144F1E41C01400E80D97 /* ConversionViewController.swift in Sources */,
+				5EC3E7921E4ACE66001B7C8F /* MapViewController.swift in Sources */,
 				5E06BD8A1E4159DA006A5697 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,20 +312,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E06BD8D1E4159DA006A5697 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E06BD8E1E4159DA006A5697 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E06BD921E4159DA006A5697 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5E06BD931E4159DA006A5697 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5EC3E7931E4AD172001B7C8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EC3E7941E4AD172001B7C8F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
