@@ -16,6 +16,7 @@
 		5E9D889E1E47EBBF00C63690 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9D889D1E47EBBF00C63690 /* MapKit.framework */; };
 		5EC3E7921E4ACE66001B7C8F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */; };
 		5EC3E7951E4AD172001B7C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC3E7931E4AD172001B7C8F /* Main.storyboard */; };
+		5EC3E79A1E4AF792001B7C8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EC3E7991E4AF792001B7C8F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		5E9D889D1E47EBBF00C63690 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5EC3E7941E4AD172001B7C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EC3E7971E4AEEA2001B7C8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		5EC3E7981E4AEF34001B7C8F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		5EC3E7991E4AF792001B7C8F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				5E30144E1E41C01400E80D97 /* ConversionViewController.swift */,
 				5E06BD891E4159DA006A5697 /* AppDelegate.swift */,
 				5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */,
+				5EC3E7991E4AF792001B7C8F /* Localizable.strings */,
 				5EC3E7931E4AD172001B7C8F /* Main.storyboard */,
 				5E06BD901E4159DA006A5697 /* Assets.xcassets */,
 				5E06BD921E4159DA006A5697 /* LaunchScreen.storyboard */,
@@ -248,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC3E7951E4AD172001B7C8F /* Main.storyboard in Resources */,
+				5EC3E79A1E4AF792001B7C8F /* Localizable.strings in Resources */,
 				5E06BD941E4159DA006A5697 /* LaunchScreen.storyboard in Resources */,
 				5E06BD911E4159DA006A5697 /* Assets.xcassets in Resources */,
 			);
@@ -324,6 +330,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5EC3E7941E4AD172001B7C8F /* Base */,
+				5EC3E7971E4AEEA2001B7C8F /* en */,
+				5EC3E7981E4AEF34001B7C8F /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -385,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
