@@ -12,6 +12,8 @@
 		5E06BD941E4159DA006A5697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E06BD921E4159DA006A5697 /* LaunchScreen.storyboard */; };
 		5E06BD9F1E4159DA006A5697 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06BD9E1E4159DA006A5697 /* WorldTrotterTests.swift */; };
 		5E06BDAA1E4159DA006A5697 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06BDA91E4159DA006A5697 /* WorldTrotterUITests.swift */; };
+		5E07164D1E5116C4003B2995 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E07164C1E5116C4003B2995 /* WebKit.framework */; };
+		5E07164F1E511BA0003B2995 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07164E1E511BA0003B2995 /* WebViewController.swift */; };
 		5E30144F1E41C01400E80D97 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30144E1E41C01400E80D97 /* ConversionViewController.swift */; };
 		5E9D889E1E47EBBF00C63690 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9D889D1E47EBBF00C63690 /* MapKit.framework */; };
 		5EC3E7921E4ACE66001B7C8F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */; };
@@ -48,6 +50,8 @@
 		5E06BDA51E4159DA006A5697 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E06BDA91E4159DA006A5697 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		5E06BDAB1E4159DA006A5697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E07164C1E5116C4003B2995 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5E07164E1E511BA0003B2995 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5E30144E1E41C01400E80D97 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		5E9D889D1E47EBBF00C63690 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E07164D1E5116C4003B2995 /* WebKit.framework in Frameworks */,
 				5E9D889E1E47EBBF00C63690 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5E30144E1E41C01400E80D97 /* ConversionViewController.swift */,
+				5E07164E1E511BA0003B2995 /* WebViewController.swift */,
 				5E06BD891E4159DA006A5697 /* AppDelegate.swift */,
 				5EC3E7911E4ACE66001B7C8F /* MapViewController.swift */,
 				5EC3E7991E4AF792001B7C8F /* Localizable.strings */,
@@ -140,6 +146,7 @@
 		5E9D889C1E47EBBF00C63690 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E07164C1E5116C4003B2995 /* WebKit.framework */,
 				5E9D889D1E47EBBF00C63690 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -283,6 +290,7 @@
 				5E30144F1E41C01400E80D97 /* ConversionViewController.swift in Sources */,
 				5EC3E7921E4ACE66001B7C8F /* MapViewController.swift in Sources */,
 				5E06BD8A1E4159DA006A5697 /* AppDelegate.swift in Sources */,
+				5E07164F1E511BA0003B2995 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

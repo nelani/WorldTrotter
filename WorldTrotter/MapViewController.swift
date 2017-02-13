@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate {
     
     var mapView: MKMapView!
     
@@ -75,7 +76,15 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         print("MapViewController loaded its view.")
+        //let locationManager = CLLocationManager
+        //locationManager.delegate = self
+        //locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //locationManager.requestAlwaysAuthorization()
+        
     }
-
+    
+    func mapViewDidStopLocatingUser(_ mapView: MKMapView) {
+        print("Stop Loading")
+    }
 
 }
